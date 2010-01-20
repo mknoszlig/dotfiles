@@ -2,6 +2,8 @@
 
 alias l='ls -la'
 alias rl='source ~/.bashrc'
+alias e="${EDITOR} ~/.bashrc"
+alias er="e && rl"
 
 
 # git
@@ -9,3 +11,4 @@ alias rl='source ~/.bashrc'
 alias gs='git status'
 alias gb='git branch'
 alias gba='git branch'
+alias gbd="gb|awk {'print \$2'}|xargs echo git:|sed s/\ //"

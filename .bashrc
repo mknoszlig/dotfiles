@@ -93,7 +93,6 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-source bash/env
-source bash/aliases
-source bash/config
-
+source ~/dotfiles/bash/env
+source ~/dotfiles/bash/aliases
+source ~/dotfiles/bash/config
