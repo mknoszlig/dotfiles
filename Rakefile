@@ -32,7 +32,7 @@ namespace :install do
     globs.each do |glob, ignore|
       replace_all = false
       prefix = glob.gsub(/\*/, '')
-      prefix = '.' if prefix.size == 0
+      prefix = '.' if prefix.empty?
 
       Dir[glob].each do |file|
 	file = File.basename(file)
