@@ -1,1 +1,6 @@
+# installation and maintenance
+export REPO_DIR="~/repos"
+export DOTFILE_REPO="~/dotfiles"
+
+# applications
 EDITOR='/usr/bin/vim'
