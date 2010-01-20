@@ -20,6 +20,7 @@ alias gbd="gb|awk {'print \$2'}|xargs echo git:|sed s/\ // 2> /dev/null"
 alias ga="git add $*"
 alias gc="git commit -v"
 alias gca="git commit -v -a"
+alias gp="git push"
 # commit pending changes and quote all args as message
 function gg() {
   git commit -v -a -m "$*"
@@ -33,5 +34,5 @@ function gbt() {
 
 # ruby
 
-alias irb='irb --readline =r irb/completion'
+alias irb='irb --readline -r irb/completion'
 alias gemi='sudo gem install --no-rdoc --no-ri'
