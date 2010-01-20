@@ -1,6 +1,10 @@
 # shell
 
 alias l='ls -la'
+
+
+# dotfiles
+
 alias rl='source ~/.bashrc'
 alias e="${EDITOR} ~/.bashrc"
 alias er="e && rl"
@@ -12,3 +16,5 @@ alias gs='git status'
 alias gb='git branch'
 alias gba='git branch'
 alias gbd="gb|awk {'print \$2'}|xargs echo git:|sed s/\ //"
+alias ga="git add $*"
+alias gc="git commit . -m $*"
