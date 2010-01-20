@@ -1,0 +1,11 @@
+# shell
+
+alias l='ls -la'
+alias rl='source ~/.bashrc'
+
+
+# git
+
+alias gs='git status'
+alias gb='git branch'
+alias gba='git branch'
