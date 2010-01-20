@@ -18,4 +18,20 @@ alias gb='git branch'
 alias gba='git branch'
 alias gbd="gb|awk {'print \$2'}|xargs echo git:|sed s/\ // 2> /dev/null"
 alias ga="git add $*"
-alias gc="git commit . -m $*"
+alias gc="git commit -v"
+alias gca="git commit -v -a"
+# commit pending changes and quote all args as message
+function gg() {
+  git commit -v -a -m "$*"
+}
+# setup a tracking branch from [remote] [branch_name]
+function gbt() {
+  git branch --track $2 $1/$2
+  git checkout $2
+}
+
+
+# ruby
+
+alias irb='irb --readline =r irb/completion'
+alias gemi='sudo gem install --no-rdoc --no-ri'
