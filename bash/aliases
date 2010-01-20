@@ -1,6 +1,7 @@
 # shell
 
 alias l='ls -la'
+alias h='history'
 
 
 # dotfiles
@@ -15,6 +16,6 @@ alias er="e && rl"
 alias gs='git status'
 alias gb='git branch'
 alias gba='git branch'
-alias gbd="gb|awk {'print \$2'}|xargs echo git:|sed s/\ //"
+alias gbd="gb|awk {'print \$2'}|xargs echo git:|sed s/\ // 2> /dev/null"
 alias ga="git add $*"
 alias gc="git commit . -m $*"
