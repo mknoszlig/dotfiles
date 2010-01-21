@@ -1,6 +1,6 @@
 # installation and maintenance
-export REPO_DIR="~/repos"
-export DOTFILE_REPO="~/dotfiles"
+export REPO_DIR="$HOME/repos"
+export DOTFILE_REPO="$HOME/dotfiles"
 
 # applications
 EDITOR='/usr/bin/vim'
