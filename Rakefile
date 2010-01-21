@@ -62,7 +62,7 @@ namespace :install do
   end
 
   def replace_file(file, prefix)
-    system %Q{rm "$HOME/#{prefix}#{file.sub('.erb', '')}"}
+    system %Q{rm -rf "$HOME/#{prefix}#{file.sub('.erb', '')}"}
     link_file(file, prefix)
   end
 
