@@ -2,6 +2,7 @@
 
 alias l='ls -la'
 alias h='history'
+alias ack='ack-grep --color'
 
 
 # dotfiles
