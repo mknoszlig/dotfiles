@@ -24,6 +24,7 @@ alias gp="git push"
 alias gl="git pull"
 alias gd="git diff"
 alias gm="git mergetool"
+alias go="git checkout"
 # commit pending changes and quote all args as message
 function gg() {
   git commit -v -a -m "$*"
