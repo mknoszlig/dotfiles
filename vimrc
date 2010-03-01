@@ -11,6 +11,9 @@ source /home/mk/.vim/source/autotag.vim
 " additional key mapping for vcscommands
 :map \bc :VCSBlame<CR>
 
+" abbreviations for parens
+:iabbrev ( ()<ESC>i
+:iabbrev { {}<ESC>i
 
 " clojure options
 let clj_highlight_builtins = 1
