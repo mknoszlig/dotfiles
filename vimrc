@@ -2,7 +2,15 @@ set nocompatible
 filetype plugin indent on
 
 :set nu
-:colorscheme vividchalk
+
+if &diff
+  set t_Co=256
+  set background=dark
+  colorscheme peaksea
+else
+  colorscheme vividchalk
+endif
+
 :let ruby_fold = 1
 
 " autotag to work with ctags
