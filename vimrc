@@ -6,7 +6,7 @@ filetype plugin indent on
 :let ruby_fold = 1
 
 " autotag to work with ctags
-source /home/mk/.vim/source/autotag.vim
+source $HOME/.vim/source/autotag.vim
 
 " additional key mapping for vcscommands
 :map \bc :VCSBlame<CR>
