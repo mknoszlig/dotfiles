@@ -29,6 +29,13 @@ alias go="git checkout"
 function gg() {
   git commit -v -a -m "$*"
 }
+
+# vimdiff powered diff between working space file 
+# and a repository reference: gdv [reference] [file]
+function gdv(){ 
+ vimdiff $2 <(git show $1:$2)
+}
+
 # setup a tracking branch from [remote] [branch_name]
 function gbt() {
   git branch --track $2 $1/$2
