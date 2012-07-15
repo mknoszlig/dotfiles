@@ -2,6 +2,7 @@
 export REPO_DIR="$HOME/repos"
 export DOTFILE_REPO="$HOME/dotfiles"
 export PATH=~/bin:$PATH
+export CLOJURE_EXT=~/clojure_ext
 
 # applications
 EDITOR='/usr/bin/vim'
