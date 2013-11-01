@@ -47,3 +47,8 @@ function gbt() {
 
 alias irb='irb --readline -r irb/completion'
 alias gemi='sudo gem install --no-rdoc --no-ri'
+
+# emacs on osx
+if [ -x /usr/local/Cellar/emacs/24.3/bin/emacs ]; then
+   alias emacs="/usr/local/Cellar/emacs/24.3/bin/emacs -nw"
+fi
