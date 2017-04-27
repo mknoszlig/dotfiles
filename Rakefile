@@ -3,7 +3,7 @@ namespace :install do
   task :vcprompt do
     src_loc = ENV['REPO_DIR']
     destination = "#{ENV['HOME']}/bin"
-    repository = "git://github.com/simple/vcprompt.git"
+    repository = "git@github.com:mknoszlig/vcprompt.git"
     local_name = 'vcprompt'
     executable_name = 'vcprompt'
     executable_path = File.join(src_loc, local_name, executable_name)
